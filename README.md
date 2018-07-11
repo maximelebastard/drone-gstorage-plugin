@@ -13,8 +13,8 @@ pipeline:
     source: gs://my.bucket/my.file.xls
     dest: mylocalfile.xls
     secrets:
-      - source: GCLOUD_CREDENTIALS_STAGING
-        target: GCLOUD_CREDENTIALS
+      - source: GCLOUD_SERVICE_ACCOUNT
+        target: GCLOUD_SERVICE_ACCOUNT
     when:
       event: deployment
 ```
