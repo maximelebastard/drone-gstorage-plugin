@@ -11,7 +11,7 @@ pipeline:
   copy:
     image: maximelebastard/drone-gstorage-plugin
     source: gs://my.bucket/my.file.xls
-    destination: mylocalfile.xls
+    dest: mylocalfile.xls
     secrets:
       - source: GCLOUD_CREDENTIALS_STAGING
         target: GCLOUD_CREDENTIALS
@@ -23,7 +23,7 @@ pipeline:
 ## Parameters
 
 * **source** : Source of the copy
-* **destination**: Destination of the copy
+* **dest**: Destination of the copy
 
 
 ## Secrets
