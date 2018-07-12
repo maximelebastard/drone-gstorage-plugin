@@ -1,5 +1,7 @@
 # Drone Google Storage copy plugin
 
+[![Build Status](https://travis-ci.org/maximelebastard/drone-gstorage-plugin.svg?branch=master)](https://travis-ci.org/maximelebastard/drone-gstorage-plugin)
+
 Lightweight drone plugin to use the copy command from the Google Storage API through SDK.
 
 It uses the official Google Cloud SDK image.
