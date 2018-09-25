@@ -5,4 +5,4 @@ sh /bin/plugin/auth.sh && \
 
 set -o xtrace && \
 
-gsutil cp ${PLUGIN_SOURCE} ${PLUGIN_DEST}
+gsutil cp -r ${PLUGIN_SOURCE} ${PLUGIN_DEST}
