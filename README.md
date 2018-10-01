@@ -14,6 +14,7 @@ pipeline:
     image: maximelebastard/drone-gstorage-plugin
     source: gs://my.bucket/my.file.xls
     dest: mylocalfile.xls
+    cleandest: true
     secrets:
       - source: GCLOUD_SERVICE_ACCOUNT
         target: GCLOUD_SERVICE_ACCOUNT
@@ -26,6 +27,8 @@ pipeline:
 
 * **source** : Source of the copy
 * **dest**: Destination of the copy
+* **cleandest**: Should the script delete the destination before downloading the source
+  * this uses `rm -rf` for a local file and `gsutil rm -r` for a distant file
 
 
 ## Secrets
